@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Welcome to login page!</h3>
+
+<form action="/signin" method="POST">
+{% csrf_token %} 
+
+  <label for="user">Username:</label>
+  <input type="text" id="user" name="username" placeholder="Enter username"><br><br>
+
+
+  <label for="pass1">Password:</label>
+  <input type="password" id="pass1" name="pass1" placeholder="Enter your password"><br><br>
+
+
+  <input type="submit" value="Signin">
+</form>
+
+</body>
+</html>
